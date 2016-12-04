@@ -1,13 +1,6 @@
-// --------------------------------------------------------------------------
-//
-//  Icons
-//    DO NOT EDIT DIRECTLY - RESERVED FOR GULP ICONS BUILD
-//
-// --------------------------------------------------------------------------
-
 @font-face {
   font-family: "icons";
-  src: url('../icons/font/icons.woff') format('woff');
+  src: url('../font/icons.woff') format('woff');
   font-weight: normal;
   font-style: normal;
 }
