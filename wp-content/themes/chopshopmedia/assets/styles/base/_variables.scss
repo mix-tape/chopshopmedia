@@ -9,7 +9,7 @@
 
 $black:               #000000;
 $charcoal:            #6f6f6f;
-$dark-gray:           #bebebe;
+$dark-gray:           #B3B3B3;
 $gray:                #dadada;
 $light-gray:          #fefefe;
 $white:               #ffffff;
@@ -30,3 +30,8 @@ $base-link-hover:     lighten($base-link-color, 20%);
 
 $base-border-color:   $gray;
 $base-border-radius:  2px;
+
+
+// ----- Animations ----- //
+
+$base-transition: all 400ms ease-in-out;

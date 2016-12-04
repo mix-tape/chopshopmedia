@@ -1,0 +1,61 @@
+// --------------------------------------------------------------------------
+//
+//   Burger Menu
+//
+// --------------------------------------------------------------------------
+
+.menuTrigger {
+  cursor: pointer;
+  padding: 20px;
+}
+
+
+.menuTrigger-bars {
+  position: relative;
+  height: 36px;
+  transform-origin: center center;
+
+  &,
+  &:before,
+  &:after {
+    content: '';
+    display: block;
+    // height: 1px;
+    width: 60px;
+    border-bottom: 1px solid $black;
+
+    transition: $base-transition;
+
+  }
+
+  &:before {
+    position: absolute;
+    top: 0;
+    // padding: 10px;
+  }
+
+  &:after {
+    position: absolute;
+    bottom: calc(50% - 1px);
+  }
+
+  &.menuTrigger--active,
+  .js-primary-navigation-open & {
+
+    transform: translateY(-24px) rotate(-45deg);
+
+    &,
+    &:before,
+    &:after {
+      border-bottom: 1px solid $white;
+    }
+
+    &:before {
+      transform: translateX(-40px);
+    }
+
+    &:after {
+      transform: translateX(-21px);
+    }
+  }
+}

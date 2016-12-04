@@ -4,3 +4,30 @@
 //
 // --------------------------------------------------------------------------
 
+.pageHeader {
+  z-index: 120;
+  padding-top: 40px;
+  padding-bottom: 40px;
+
+  @include media($mobile-down) {
+    padding-top: 20px;
+    padding-bottom: 20px;
+  }
+
+  .container {
+    position: relative;
+  }
+}
+
+  #logo {
+    transition: $base-transition;
+
+    .js-primary-navigation-open & {
+      fill: $white;
+    }
+  }
+
+  .pageHeader-menuTrigger {
+    @include vertical-align(absolute);
+    right: 0;
+  }

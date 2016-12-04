@@ -16,7 +16,7 @@
   }
 
   @include media($mobile-down) {
-    max-width: $mobile;
+    max-width: 100%;
     width: auto;
   }
 }
@@ -25,7 +25,8 @@
 .wrapper {
   display: block;
   position: relative;
-  padding: $gap * 2 $gap;
+  padding-left: $gap;
+  padding-right: $gap;
 }
 
   .container {

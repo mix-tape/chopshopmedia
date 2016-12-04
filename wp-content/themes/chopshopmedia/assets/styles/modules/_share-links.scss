@@ -1,14 +1,19 @@
 // --------------------------------------------------------------------------
 //
-//  Animation Mixins
+//   Share Links
 //
 // --------------------------------------------------------------------------
 
-@mixin nth-delay($delay: 200ms, $type: transition) {
+.shareLinks {
 
-  @for $i from 1 through 20 {
-    &:nth-child(#{$i}) {
-      #{$type}-delay: (0.2s * $i);
+}
+
+  .shareLinks-link {
+    font-size: 32px;
+    margin-left: 10px;
+    color: $dark-gray;
+
+    &:hover {
+      color: $white;
     }
   }
-}

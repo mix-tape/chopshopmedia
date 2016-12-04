@@ -3,3 +3,45 @@
 //  Footer
 //
 // --------------------------------------------------------------------------
+
+.pageFooter {
+  padding-top: 50px;
+  padding-bottom: 50px;
+  background-color: $black;
+
+  color: $white;
+  font-size: 12px;
+  letter-spacing: 1px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+  .pageFooter-copyright {
+    margin-bottom: 0;
+  }
+
+    .pageFooter-copyright-link {
+      margin-left: 40px;
+      color: $dark-gray;
+
+      &:hover {
+        color: $white;
+      }
+
+      @include media($mobile-down) {
+        display: block;
+        margin-left: auto;
+        margin-top: 20px;
+      }
+    }
+
+  .pageFooter-shareLinks {
+    @include vertical-align(absolute)
+    right: 100px;
+
+    @include media($tablet-down) {
+      position: relative;
+      right: auto;
+      margin-top: 50px;
+    }
+  }

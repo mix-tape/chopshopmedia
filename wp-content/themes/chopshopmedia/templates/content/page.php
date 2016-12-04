@@ -9,8 +9,6 @@
 
           <h1><?php echo roots_title(); ?></h1>
 
-          <?php the_content(); ?>
-
         </article>
 
       <?php endwhile; ?>
