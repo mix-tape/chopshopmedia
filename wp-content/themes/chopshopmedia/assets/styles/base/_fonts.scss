@@ -1,0 +1,45 @@
+// --------------------------------------------------------------------------
+//
+//   Gilroy
+//
+// --------------------------------------------------------------------------
+
+@font-face {
+  font-family: 'gilroy';
+  src: url('../fonts/gilroy/gilroy-black.woff2') format('woff2'),
+       url('../fonts/gilroy/gilroy-black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url('../fonts/gilroy/gilroy-bold.woff2') format('woff2'),
+       url('../fonts/gilroy/gilroy-bold.woff') format('woff');
+  font-weight: 700;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url('../fonts/gilroy/gilroy-extrabold.woff2') format('woff2'),
+       url('../fonts/gilroy/gilroy-extrabold.woff') format('woff');
+  font-weight: 800;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url('../fonts/gilroy/gilroy-light.woff2') format('woff2'),
+       url('../fonts/gilroy/gilroy-light.woff') format('woff');
+  font-weight: 300;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'gilroy';
+  src: url('../fonts/gilroy/gilroy-regular.woff2') format('woff2'),
+       url('../fonts/gilroy/gilroy-regular.woff') format('woff');
+  font-weight: 400;
+  font-style: normal;
+}
