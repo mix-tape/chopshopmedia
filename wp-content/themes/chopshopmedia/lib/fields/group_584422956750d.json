@@ -1,0 +1,43 @@
+{
+    "key": "group_584422956750d",
+    "title": "Page Number",
+    "fields": [
+        {
+            "key": "field_5844229e707dc",
+            "label": "Page Number",
+            "name": "page_number",
+            "type": "text",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "01",
+            "placeholder": "01",
+            "prepend": "",
+            "append": "",
+            "maxlength": 2
+        }
+    ],
+    "location": [
+        [
+            {
+                "param": "post_type",
+                "operator": "==",
+                "value": "page"
+            }
+        ]
+    ],
+    "menu_order": 0,
+    "position": "acf_after_title",
+    "style": "seamless",
+    "label_placement": "top",
+    "instruction_placement": "label",
+    "hide_on_screen": "",
+    "active": 1,
+    "description": "",
+    "modified": 1480860376
+}

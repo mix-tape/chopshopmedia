@@ -1,0 +1,38 @@
+// --------------------------------------------------------------------------
+//
+//   Page Title
+//
+// --------------------------------------------------------------------------
+
+.pageTitle {
+  padding: 60px 0;
+  background-color: $black;
+  text-align: center;
+
+  @include media($mobile-down) {
+    padding: 30px 10px;
+  }
+}
+
+  .pageTitle-number {
+    color: $white;
+    font-size: 100px;
+    font-weight: 800;
+    line-height: 1;
+
+    @include media($mobile-down) {
+      font-size: 60px;
+    }
+  }
+
+  .pageTitle-separator {
+    margin: 10px 0 20px;
+    height: 20px;
+  }
+
+  .pageTitle-title {
+    color: $white;
+    font-size: 18px;
+    font-weight: 600;
+    letter-spacing: 4px;
+  }

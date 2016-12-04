@@ -17,13 +17,18 @@
   pointer-events: none;
 
   transition: $base-transition;
-  transform: translateY(-100px);
 
   .js-primary-navigation-open & {
     opacity: 1;
     pointer-events: inherit;
-    transform: translateY(0);
+
+    .menu-item {
+      opacity: 1;
+      transform: translateY(0);
+    }
   }
+
+
 
   @include media($mobile-down) {
     padding-top: 150px;
@@ -36,6 +41,9 @@
   }
 
     .menu-item {
+
+      transition: transform 400ms ease-in-out;
+      transform: translateY(-100px);
 
       &:hover {
         background-color: $white;

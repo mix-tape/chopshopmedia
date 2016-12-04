@@ -1,0 +1,16 @@
+// --------------------------------------------------------------------------
+//
+//   Separator
+//
+// --------------------------------------------------------------------------
+
+.separator {
+  border: none;
+  background-color: transparent;
+
+  &:after {
+    @include icon-separator;
+    color: $white;
+    font-size: 20px;
+  }
+}

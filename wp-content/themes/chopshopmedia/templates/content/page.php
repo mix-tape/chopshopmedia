@@ -7,7 +7,7 @@
 
         <article <?php post_class() ?> id="post-<?php the_ID(); ?>">
 
-          <h1><?php echo roots_title(); ?></h1>
+
 
         </article>
 

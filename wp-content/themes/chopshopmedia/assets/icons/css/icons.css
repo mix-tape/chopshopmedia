@@ -54,13 +54,19 @@
   content: "\EA03";
 }
 
-@mixin icon-youtube {
+@mixin icon-separator {
   @include icon;
   content: "\EA04";
+}
+
+@mixin icon-youtube {
+  @include icon;
+  content: "\EA05";
 }
 
 
 .icon-facebook:before { content: "\EA01" }
 .icon-instagram:before { content: "\EA02" }
 .icon-linkedin:before { content: "\EA03" }
-.icon-youtube:before { content: "\EA04" }
+.icon-separator:before { content: "\EA04" }
+.icon-youtube:before { content: "\EA05" }
