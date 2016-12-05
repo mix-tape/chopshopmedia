@@ -36,7 +36,7 @@ class NavWalker extends \Walker_Nav_Menu {
 
     if ($element->is_subitem) {
       foreach ($children_elements[$element->ID] as $child) {
-        if ($child->current_item_parent || Utils\url_compare($this->archive, $child->url)) {
+        if ($child->current_item_parent || url_compare($this->archive, $child->url)) {
           $element->classes[] = 'active';
         }
       }
@@ -59,7 +59,7 @@ class NavWalker extends \Walker_Nav_Menu {
     if ($this->cpt) {
       $classes = str_replace('current_page_parent', '', $classes);
 
-      if (Utils\url_compare($this->archive, $item->url)) {
+      if (url_compare($this->archive, $item->url)) {
         $classes[] = 'active';
       }
     }
