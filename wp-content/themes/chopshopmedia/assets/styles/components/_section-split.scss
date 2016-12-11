@@ -1,0 +1,29 @@
+// --------------------------------------------------------------------------
+//
+//   Section Split
+//
+// --------------------------------------------------------------------------
+
+.sectionSplit {
+
+}
+
+  .sectionSplit--small {
+    @include span-columns(5);
+
+    @include media($tablet-down) {
+      @include span-columns(12);
+    }
+  }
+
+  .sectionSplit--large {
+    @include span-columns(7);
+
+    @include media($tablet-down) {
+      @include span-columns(12);
+    }
+
+    .sectionSplit-content {
+      @include span-columns(6 of 7);
+    }
+  }
