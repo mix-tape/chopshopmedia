@@ -46,34 +46,46 @@
 }
 
 
-@mixin icon-facebook {
+@mixin icon-dot-closed {
   @include icon;
   content: "\EA01";
 }
 
-@mixin icon-instagram {
+@mixin icon-dot-open {
   @include icon;
   content: "\EA02";
 }
 
-@mixin icon-linkedin {
+@mixin icon-facebook {
   @include icon;
   content: "\EA03";
 }
 
-@mixin icon-separator {
+@mixin icon-instagram {
   @include icon;
   content: "\EA04";
 }
 
-@mixin icon-youtube {
+@mixin icon-linkedin {
   @include icon;
   content: "\EA05";
 }
 
+@mixin icon-separator {
+  @include icon;
+  content: "\EA06";
+}
 
-.icon-facebook:before { content: "\EA01" }
-.icon-instagram:before { content: "\EA02" }
-.icon-linkedin:before { content: "\EA03" }
-.icon-separator:before { content: "\EA04" }
-.icon-youtube:before { content: "\EA05" }
+@mixin icon-youtube {
+  @include icon;
+  content: "\EA07";
+}
+
+
+.icon-dot-closed:before { content: "\EA01" }
+.icon-dot-open:before { content: "\EA02" }
+.icon-facebook:before { content: "\EA03" }
+.icon-instagram:before { content: "\EA04" }
+.icon-linkedin:before { content: "\EA05" }
+.icon-separator:before { content: "\EA06" }
+.icon-youtube:before { content: "\EA07" }

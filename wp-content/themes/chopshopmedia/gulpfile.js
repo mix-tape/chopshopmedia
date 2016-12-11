@@ -88,8 +88,6 @@ gulp.task('browser-sync', () => {
 //   Lint SCSS
 // --------------------------------------------------------------------------
 
-// Depends on gem install scss_lint scss_lint_reporter_checkstyle
-
 gulp.task('lint-styles', () => {
 
   return gulp.src( [ config.styles + '/**/*.scss', '!' + config.styles + '/**/_print.scss' ] )
@@ -97,7 +95,8 @@ gulp.task('lint-styles', () => {
       configFile: '.scss-lint-config.yml',
     }))
     .pipe( plugins.sassLint.format() )
-    // .pipe( plugins.sassLint.failOnError() )
+    .pipe( plugins.sassLint.failOnError())
+    .on("error", plugins.notify.onError('SASS Lint Error!'))
 })
 
 
@@ -112,20 +111,21 @@ gulp.task('styles', () => {
     .pipe( plugins.cssGlobbing({
       extensions: ['.css', '.scss']
     }))
+    .pipe( plugins.sourcemaps.init() )
     .pipe( plugins.sass({
       style: 'expanded',
       quiet: true,
-      sourcemap: true,
-      sourcemapPath: './',
       includePaths: [ config.vendor ]
     })
-    .on( 'error', plugins.sass.logError) )
+    .on( 'error', plugins.sass.logError)
+    .on( 'error', plugins.notify.onError('SCSS Error!') ) )
+    .pipe( plugins.sourcemaps.init({ loadMaps: true }) )
     .pipe( plugins.groupCssMediaQueries() )
     .pipe( plugins.autoprefixer("last 3 version", "> 1%", "ie 8", "ie 7") )
     .pipe( plugins.rename('styles.css') )
-    .pipe( gulp.dest(config.styles) )
-    .pipe( reload({stream:true}) )
-    .pipe( plugins.parker() )
+    .pipe( plugins.sourcemaps.write('./') )
+    .pipe( gulp.dest( config.styles ) )
+    .pipe( browserSync.reload({stream:true}) )
 })
 
 
@@ -138,9 +138,22 @@ gulp.task('compress-styles', ['styles'], () => {
   return gulp.src( config.styles + '/styles.css' )
     .pipe( plugins.plumber() )
     .pipe( plugins.cssnano() )
-    .pipe( gulp.dest(config.styles) )
+    .pipe( gulp.dest( config.styles ) )
+    .pipe( plugins.parker() )
 })
 
+// --------------------------------------------------------------------------
+//   Lint JS
+// --------------------------------------------------------------------------
+
+gulp.task('lint-scripts', function() {
+
+  return gulp.src([config.scripts + '/**/*.js', '!' + config.scripts + '/global.js'])
+    .pipe(plugins.eslint('.eslintrc.yml'))
+    .pipe(plugins.eslint.format())
+    .pipe(plugins.eslint.failAfterError())
+    .on("error", plugins.notify.onError('ESLint Error!'))
+})
 
 // --------------------------------------------------------------------------
 //   Concat all user script files required into `global.js`
@@ -155,13 +168,18 @@ gulp.task('scripts', () => {
   return gulp.src( scripts )
     .pipe( plugins.plumber() )
     .pipe( plugins.sourcemaps.init() )
-    .pipe( plugins.babel({
-      presets: ['latest']
-    }))
-    // .pipe( plugins.order( ['*jquery.js*', '*SVGInjector.js', 'module.init.js'] ) )
+    // .pipe( plugins.babel({
+    //   presets: ['latest']
+    // }))
+    // .pipe( plugins.order( [ 'assets/scripts/modules/*.js', '*jquery.js', 'assets/vendor/**/*.js'] ) )
+    // .pipe( plugins.debug() )
     .pipe( plugins.concat('global.js') )
     .pipe( plugins.sourcemaps.write( '.' ) )
     .pipe( gulp.dest( config.scripts ) )
+})
+
+gulp.task('scripts-reload', ['scripts'], () => {
+  browserSync.reload()
 })
 
 
@@ -245,26 +263,18 @@ gulp.task('icons', () => {
 //   Watch
 // --------------------------------------------------------------------------
 
-gulp.task('watch', () => {
+gulp.task('watch-styles', () => {
 
   return plugins.watch( config.styles + '/**/*.scss', () => {
     gulp.start('styles')
   })
 
-  plugins.watch( ['./bower.json', config.scripts + '/**/*.js', '!' + config.scripts + '/global.js'], () => {
-    gulp.start('scripts')
-  })
-
 })
 
+gulp.task('watch-scripts', () => {
 
-gulp.task('watch-build', () => {
-
-  plugins.watch( config.styles + '/**/*.scss', () => {
-    gulp.start('compress-styles')
-  })
-  plugins.watch( ['./bower.json', config.scripts + '/**/*.js'], () => {
-    gulp.start('compress-scripts')
+  return plugins.watch( ['./bower.json', config.scripts + '/**/*.js', '!' + config.scripts + '/global.js'], () => {
+    gulp.start('scripts-reload')
   })
 
 })
@@ -274,7 +284,7 @@ gulp.task('watch-build', () => {
 //   Run development level tasks, and watch for changes
 // --------------------------------------------------------------------------
 
-gulp.task('default', [ 'styles', 'scripts', 'browser-sync', 'watch'])
+gulp.task('default', [ 'styles', 'scripts', 'browser-sync', 'watch-styles', 'watch-scripts' ])
 
 
 // --------------------------------------------------------------------------
