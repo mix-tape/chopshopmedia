@@ -3,3 +3,27 @@
 //  Home Page
 //
 // --------------------------------------------------------------------------
+
+
+.heroSection {
+
+  position: relative;
+  height: 800px;
+
+}
+
+  .heroTagline {
+    @include vertical-align(absolute);
+    right: 0;
+
+    color: $white;
+    font-weight: 800;
+    font-size: 80px;
+    line-height: 1.1;
+  }
+
+  .heroTagline-separator {
+    display: block;
+    font-size: 16px;
+    line-height: 1;
+  }
