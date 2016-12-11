@@ -4,11 +4,12 @@
 //
 // --------------------------------------------------------------------------
 
-@mixin button ($colour1: $base-link-color) {
+@mixin button ($colour1: $black) {
+  position: relative;
   display: inline-block;
-  padding: 0.5em 1em;
+  padding: 0.2em 1.7em;
   background-color: $colour1;
-  border: 1px solid $colour1;
+  border: none;
   border-radius: $base-border-radius;
   outline: 0;
   zoom: 1;
@@ -21,12 +22,13 @@
   vertical-align: baseline;
   text-decoration: none;
   text-align: center;
+  font-weight: 300;
   line-height: normal;
+  letter-spacing: 1px;
 
   &:hover {
     outline: 0;
-    background: lighten($colour1, 20%);
-    border-color: lighten($colour1, 20%);
+    color: $white;
   }
 
   &:active,
@@ -42,3 +44,40 @@
     box-shadow: none;
   }
 }
+
+
+  .button--left {
+
+    &:after {
+      content: '';
+      position: absolute;
+      right: calc(-1.7em + 1px);
+      top: 0;
+      height: 100%;
+      border-style: solid;
+      border-width: 1.7em 1.7em 0 0;
+      border-color: $black transparent transparent transparent;
+
+    }
+  }
+
+  .button--right {
+    margin-left: 2em;
+
+    &:after {
+      content: '';
+      position: absolute;
+      left: calc(-1.7em + 1px);
+      top: 0;
+      height: 100%;
+      border-style: solid;
+      border-width: 0 0 1.7em 1.7em;
+      border-color:  transparent transparent $black transparent;
+
+    }
+  }
+
+  .button--dark {
+    background-color: $black;
+    color: $white;
+  }
