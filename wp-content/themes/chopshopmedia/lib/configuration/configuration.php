@@ -26,7 +26,7 @@ add_filter( 'jpeg_quality', create_function( '', 'return 80;' ) );
 add_filter( 'wp_editor_set_quality', create_function( '', 'return 80;' ) );
 
 set_post_thumbnail_size( 300, 300, true );
-add_image_size( 'hero', 1920, 900, true );
+add_image_size( 'hero', 1920, 800, true );
 
 
 update_option('large_size_w', 650);
