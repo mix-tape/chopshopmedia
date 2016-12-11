@@ -7,7 +7,7 @@
 @mixin button ($colour1: $black) {
   position: relative;
   display: inline-block;
-  padding: 0.2em 1.7em;
+  padding: 0.3em 1.7em;
   background-color: $colour1;
   border: none;
   border-radius: $base-border-radius;
@@ -25,6 +25,8 @@
   font-weight: 300;
   line-height: normal;
   letter-spacing: 1px;
+
+  transition: all 400ms ease-in-out;
 
   &:hover {
     outline: 0;
@@ -45,33 +47,45 @@
   }
 }
 
+.button {
+  @include button;
+}
 
   .button--left {
+    padding-right: 0.8em;
+
+    &:hover {
+      transform: translateX(-10px);
+    }
 
     &:after {
       content: '';
       position: absolute;
-      right: calc(-1.7em + 1px);
+      right: calc(-1.9em + 1px);
       top: 0;
       height: 100%;
       border-style: solid;
-      border-width: 1.7em 1.7em 0 0;
+      border-width: 1.9em 1.9em 0 0;
       border-color: $black transparent transparent transparent;
-
     }
   }
 
   .button--right {
-    margin-left: 2em;
+    margin-left: 3em;
+    padding-left: 0.8em;
+
+    &:hover {
+      transform: translateX(10px);
+    }
 
     &:after {
       content: '';
       position: absolute;
-      left: calc(-1.7em + 1px);
+      left: calc(-1.9em + 1px);
       top: 0;
       height: 100%;
       border-style: solid;
-      border-width: 0 0 1.7em 1.7em;
+      border-width: 0 0 1.9em 1.9em;
       border-color:  transparent transparent $black transparent;
 
     }

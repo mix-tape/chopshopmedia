@@ -1,0 +1,17 @@
+// --------------------------------------------------------------------------
+//
+//   Content Column
+//
+// --------------------------------------------------------------------------
+
+.contentColumn {
+  @include span-columns(6);
+
+  @include media($mobile-down) {
+    @include span-columns(4);
+  }
+
+  &:last-of-type {
+    @include omega;
+  }
+}

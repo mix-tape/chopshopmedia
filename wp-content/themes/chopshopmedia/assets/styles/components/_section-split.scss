@@ -5,11 +5,11 @@
 // --------------------------------------------------------------------------
 
 .sectionSplit {
-
+  min-height: 1px;
 }
 
   .sectionSplit--small {
-    @include span-columns(5);
+    @include span-columns(4);
 
     @include media($tablet-down) {
       @include span-columns(12);
@@ -18,12 +18,24 @@
 
   .sectionSplit--large {
     @include span-columns(7);
+    @include shift(1);
 
     @include media($tablet-down) {
       @include span-columns(12);
+      @include shift(0);
     }
 
     .sectionSplit-content {
       @include span-columns(6 of 7);
     }
+  }
+
+  .shift--two {
+    @include shift(1);
+  }
+
+
+  .sectionSplit-actions {
+    @include span-columns(12);
+    margin-top: 30px;
   }

@@ -22,14 +22,14 @@
 
     <div class="container">
 
-      <div class="sectionSplit--small">
+      <div class="sectionSplit sectionSplit--small">
         <div class="sectionTitle">
           <span class="sectionTitle-number">01</span>
           <span class="sectionTitle-title">Who <br>We Are</span>
         </div>
       </div>
 
-      <div class="sectionSplit--large">
+      <div class="sectionSplit sectionSplit--large">
 
         <div class="sectionSplit-content">
 
@@ -41,7 +41,141 @@
 
         </div>
 
-        <img alt="Chop Shop Media Photography" style="margin-top: 80px" src="<?php image_directory() ?>/content-home-section-01.jpg">
+        <img alt="Chop Shop Media" style="margin-top: 80px" src="<?php image_directory() ?>/content-home-section-01.jpg">
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="wrapper pageSection">
+
+    <div class="container">
+
+      <div class="sectionSplit sectionSplit--small">
+
+        <img alt="Chop Shop Media" style="margin-top: 190px" src="<?php image_directory() ?>/content-home-section-02.jpg">
+
+      </div>
+
+      <div class="sectionSplit sectionSplit--large">
+
+        <div class="sectionTitle">
+          <span class="sectionTitle-number">02</span>
+          <span class="sectionTitle-title">What <br>We Do</span>
+        </div>
+
+        <div class="sectionSplit-content">
+
+          <div class="contentColumn">
+
+            <strong>Film & Content</strong>
+
+            <hr class="separator separator--dark">
+
+            <br>
+
+            <p>Photography / Branded Content / <br>Corporate Promotion / Profiles / <br>Event Coverage / TV Commercials / <br>Motion Infographics / Music Videos</p>
+
+          </div>
+
+          <div class="contentColumn">
+
+            <strong>Creative Direction</strong>
+
+            <hr class="separator separator--dark">
+
+            <br>
+
+            <p>Brand & Identity / Campaign / <br>Print Comms / Environmental / <br>UX & UI Design / Motion Design</p>
+
+          </div>
+
+
+          <nav class="sectionSplit-actions">
+            <a href="#" class="button button--left button--dark">learn about <strong>our services</strong></a>
+            <a href="#" class="button button--right button--dark">explore <strong>our work</strong></a>
+          </nav>
+
+        </div>
+
+
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="quoteSlider">
+
+    <div class="quoteSlider-slide">
+
+      <div class="container">
+
+        <div class="sectionSplit sectionSplit--small">
+          <img class="quoteSlider-logo" alt="West Coast Physiotherapy" src="<?php image_directory() ?>/content-logo-west-coast-physio.svg">
+        </div>
+
+        <div class="sectionSplit sectionSplit--large">
+
+          <div class="quoteSlider-services">Brand & Identity / Print Comms / Environmental</div>
+
+          <hr class="separator quoteSlider-separator">
+
+          <blockquote cite="http://westcoastphysiotherapy.com.au/" class="quoteSlider-quote">
+            Chop Shop Media provided the most professional service, with an amazing final product. Would recommend Adam and his team to everyone!
+          </blockquote>
+
+          <span class="quoteSlider-author">West Coast Physiotherapy</span>
+
+        </div>
+
+      </div>
+
+    </div>
+
+  </section>
+
+
+  <section class="wrapper pageSection pageSection--centered">
+
+    <div class="container">
+
+      <div class="sectionTitle">
+        <span class="sectionTitle-number">03</span>
+        <span class="sectionTitle-title">Explore <br> Our Work</span>
+      </div>
+
+      <div>
+        <img alt="Chop Shop Media" src="<?php image_directory() ?>/content-home-section-03.jpg">
+      </div>
+
+    </div>
+
+  </section>
+
+  <section class="wrapper pageSection">
+
+    <div class="container">
+
+      <div class="sectionTitle">
+        <span class="sectionTitle-number">04</span>
+        <span class="sectionTitle-title">Let's make sweet <br>work together</span>
+      </div>
+
+      <div class="sectionSplit sectionSplit--large shift--two">
+
+        <div class="sectionSplit-content">
+
+          <p>We are not natural salesmen but we do believe in the power of communication and we have the skills and experience to achieve results. We’d love to talk with you about how we can help you reach a greater audience. </p>
+
+          <a href="#" class="button button--left button--dark">make <strong>contact</strong></a>
+
+        </div>
 
       </div>
 
