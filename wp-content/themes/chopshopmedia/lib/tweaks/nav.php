@@ -77,6 +77,39 @@ class NavWalker extends \Walker_Nav_Menu {
       return !empty($element);
     });
   }
+
+
+  function start_el( &$output, $item, $depth = 0, $args = array(), $id = 0 ) {
+    $indent = str_repeat("\t", $depth);
+    $attributes  = '';
+
+    ! empty ( $item->attr_title )
+    and $item->attr_title !== $item->title
+    and $attributes .= ' title="' . esc_attr( $item->attr_title ) .'"';
+
+    ! empty ( $item->url )
+    and $attributes .= ' href="' . esc_attr( $item->url ) .'"';
+
+    // echo "<pre>";
+    // var_dump($item);
+    // echo "</pre>";
+
+    $number      = get_field( 'page_number', $item->object_id );
+    $attributes  = trim( $attributes );
+    $title       = apply_filters( 'the_title', $item->title, $item->ID );
+    $item_output = "$args->before<a $attributes>$args->link_before $number $title</a>"
+                 . "$args->link_after$args->after";
+
+    $output .= $indent . "<li class=\"menu-item\">";
+
+    $output .= apply_filters(
+            'walker_nav_menu_start_el',
+            $item_output,
+            $item,
+            $depth,
+            $args
+    );
+  }
 }
 
 /**
