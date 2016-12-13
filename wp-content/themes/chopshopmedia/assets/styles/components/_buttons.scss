@@ -4,12 +4,15 @@
 //
 // --------------------------------------------------------------------------
 
+$button-transition: all 400ms ease-in-out;
+
 @mixin button ($colour1: $black) {
   position: relative;
   display: inline-block;
-  padding: 0.3em 1.7em;
-  background-color: $colour1;
-  border: none;
+  padding: 0.4em 1.7em;
+  color: $black;
+  background-color: $white;
+  border: 1px solid $black;
   border-radius: $base-border-radius;
   outline: 0;
   zoom: 1;
@@ -17,7 +20,6 @@
   user-select: none;
   -webkit-user-drag: none;
 
-  color: $white;
   white-space: nowrap;
   vertical-align: baseline;
   text-decoration: none;
@@ -26,24 +28,34 @@
   line-height: normal;
   letter-spacing: 1px;
 
-  transition: all 400ms ease-in-out;
+  transition: $button-transition;
 
   &:hover {
     outline: 0;
-    color: $white;
+    color: $black;
+    background-color: $white;
   }
 
-  &:active,
-  &.active {
+  &:active {
     outline: 0;
   }
 
-  &.disabled,
   &[disabled] {
     background-image: none;
     opacity: 0.4;
     cursor: not-allowed;
     box-shadow: none;
+  }
+
+  @include media($mobile-down) {
+    display: block;
+    margin: 10px 0 0;
+    padding: 10px 0;
+
+    &:after,
+    &:before {
+      display: none;
+    }
   }
 }
 
@@ -52,41 +64,41 @@
 }
 
   .button--left {
-    padding-right: 0.8em;
-
-    &:hover {
-      transform: translateX(-10px);
-    }
+    padding-right: 0em;
+    border-right: none;
+    z-index: 1;
 
     &:after {
+      z-index: -1;
       content: '';
       position: absolute;
       right: calc(-1.9em + 1px);
-      top: 0;
-      height: 100%;
-      border-style: solid;
-      border-width: 1.9em 1.9em 0 0;
-      border-color: $black transparent transparent transparent;
+      top: -1px;
+      height: calc(100% + 2px);
+      width: 3.5em;
+      border: 1px solid $black;
+      border-left: none;
+      transform: skewX(-45deg);
     }
   }
 
   .button--right {
-    margin-left: 3em;
-    padding-left: 0.8em;
+    margin-left: 5em;
+    padding-left: 0em;
 
-    &:hover {
-      transform: translateX(10px);
-    }
+    border-left: none;
 
     &:after {
+      z-index: -1;
       content: '';
       position: absolute;
       left: calc(-1.9em + 1px);
-      top: 0;
-      height: 100%;
-      border-style: solid;
-      border-width: 0 0 1.9em 1.9em;
-      border-color:  transparent transparent $black transparent;
+      top: -1px;
+      height: calc(100% + 2px);
+      width: 3.5em;
+      border: 1px solid $black;
+      border-right: none;
+      transform: skewX(-45deg);
 
     }
   }
@@ -94,4 +106,19 @@
   .button--dark {
     background-color: $black;
     color: $white;
+
+    &:after,
+    &:before {
+      background-color: $black;
+      color: $white;
+
+      transition: $button-transition;
+    }
+
+    &:hover {
+      &:after,
+      &:before {
+        background-color: $white;
+      }
+    }
   }
