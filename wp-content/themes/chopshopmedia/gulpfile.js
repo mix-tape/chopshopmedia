@@ -43,7 +43,6 @@ gulp.task('browser-sync', () => {
 
   var files = [
         '**/*.php',
-        '**/*.{png,jpg,gif}'
       ]
 
   browserSync.init({
@@ -125,7 +124,7 @@ gulp.task('styles', () => {
     .pipe( plugins.rename('styles.css') )
     .pipe( plugins.sourcemaps.write('./') )
     .pipe( gulp.dest( config.styles ) )
-    .pipe( browserSync.reload({stream:true}) )
+    .pipe( browserSync.stream( { match: '**/*.css' } ) )
 })
 
 
