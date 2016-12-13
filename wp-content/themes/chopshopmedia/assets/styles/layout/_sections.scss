@@ -41,6 +41,11 @@
 .pageSection {
   margin-top: 100px;
   margin-bottom: 100px;
+
+  @include media($mobile-down) {
+    margin-top: 30px;
+    margin-bottom: 30px;
+  }
 }
 
   .pageSection--centered {
