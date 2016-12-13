@@ -27,6 +27,11 @@
 
     .sectionSplit-content {
       @include span-columns(6 of 7);
+
+      @include media($mobile-down) {
+        @include span-columns(4);
+        margin-bottom: 20px;
+      }
     }
   }
 

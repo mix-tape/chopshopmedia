@@ -8,6 +8,10 @@
 .heroSection {
   position: relative;
   height: 800px;
+
+  @include media($mobile-down) {
+    height: 250px;
+  }
 }
 
   .heroTagline {
@@ -18,6 +22,10 @@
     font-weight: 800;
     font-size: 80px;
     line-height: 1.1;
+
+    @include media($mobile-down) {
+      font-size: 30px;
+    }
   }
 
     .heroTagline-separator {

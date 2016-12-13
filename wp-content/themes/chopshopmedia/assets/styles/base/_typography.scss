@@ -99,6 +99,10 @@ figure {
 img {
   max-width: 100%;
   height: auto;
+
+  @include media($mobile-down) {
+    margin-top: 0 !important;
+  }
 }
 
 hr {
@@ -116,19 +120,6 @@ blockquote {
   p:last-child {
     margin-bottom: 0;
   }
-}
-
-ins {
-  background: $yellow;
-  color: $black;
-  text-decoration: none;
-}
-
-mark {
-  background: $yellow;
-  color: $black;
-  font-style: italic;
-  font-weight: bold;
 }
 
 table {

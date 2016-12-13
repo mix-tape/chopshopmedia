@@ -12,12 +12,23 @@
 }
 
   .quoteSlider-slide {
-    padding: 70px 0 100px;
+    padding: 70px 20px 100px;
+
+    @include media($mobile-down) {
+      padding: 30px 20px 50px;
+    }
   }
 
   .quoteSlider-logo {
     @include vertical-align(absolute);
     max-width: 250px;
+
+    @include media($mobile-down) {
+      @include vertical-align(relative);
+      @include horizontal-align(relative);
+      margin-top: 20px;
+      margin-bottom: 30px;
+    }
   }
 
 
@@ -32,6 +43,10 @@
     font-size: 30px;
     font-weight: 300;
     line-height: 1.3;
+
+    @include media($mobile-down) {
+      font-size: 17px;
+    }
   }
 
   .quoteSlider-author {

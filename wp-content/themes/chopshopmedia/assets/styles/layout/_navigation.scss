@@ -65,7 +65,7 @@
         line-height: 2.5;
 
         @include media($mobile-down) {
-          max-width: flex-grid(8);
+          max-width: flex-grid(6.5);
           font-size: 6vw;
         }
       }
