@@ -9,6 +9,8 @@ get_template_part('templates/layout/head'); ?>
 
 <body <?php body_class(); ?>>
 
+<?php get_template_part('templates/layout/preloader');?>
+
 <?php get_template_part('templates/layout/header');?>
 
 <?php include roots_template_path(); ?>
