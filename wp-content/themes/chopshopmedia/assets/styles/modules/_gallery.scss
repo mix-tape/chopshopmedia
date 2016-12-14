@@ -1,0 +1,84 @@
+// --------------------------------------------------------------------------
+//
+//   Gallery
+//
+// --------------------------------------------------------------------------
+
+.gallery {
+
+}
+
+
+  .galleryRow {
+    border-top: 1px solid $black;
+    display: flex;
+  }
+
+    .galleryRow-image {
+      flex-grow: 1;
+
+
+      border-right: 1px solid $black;
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      .galleryRow--three & {
+        height: 50vw;
+      }
+    }
+
+
+  .galleryRow--two {
+
+    @include media($mobile-down) {
+      flex-direction: column;
+    }
+  }
+
+    .galleryRow-block {
+      position: relative;
+      flex-grow: 1;
+      height: 30vw;
+
+      background-size: cover;
+      background-position: center;
+      background-repeat: no-repeat;
+
+      // cursor: pointer;
+
+      @include media($mobile-down) {
+        flex-shrink: 0;
+        height: 50vw;
+        border-bottom: 1px solid $black;
+      }
+    }
+
+    .galleryRow-block--video .galleryRow-block-link {
+      position: absolute;
+      width: 100%;
+      height: 100%;
+      top: 0;
+      left: 0;
+      padding: 25%;
+
+      color: $white;
+      font-weight: bold;
+      font-size: 20px;
+      text-transform: uppercase;
+      text-align: center;
+      letter-spacing: 3px;
+
+      @include media($mobile-down) {
+        padding: 18%;
+      }
+
+      &:before {
+        @include icon-play;
+        display: block;
+        margin-bottom: 10px;
+
+        font-size: 50px;
+      }
+    }
