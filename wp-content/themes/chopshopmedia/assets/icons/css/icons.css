@@ -64,14 +64,19 @@
   content: "\EA05";
 }
 
-@mixin icon-separator {
+@mixin icon-play {
   @include icon;
   content: "\EA06";
 }
 
-@mixin icon-youtube {
+@mixin icon-separator {
   @include icon;
   content: "\EA07";
+}
+
+@mixin icon-youtube {
+  @include icon;
+  content: "\EA08";
 }
 
 
@@ -80,5 +85,6 @@
 .icon-facebook:before { content: "\EA03" }
 .icon-instagram:before { content: "\EA04" }
 .icon-linkedin:before { content: "\EA05" }
-.icon-separator:before { content: "\EA06" }
-.icon-youtube:before { content: "\EA07" }
+.icon-play:before { content: "\EA06" }
+.icon-separator:before { content: "\EA07" }
+.icon-youtube:before { content: "\EA08" }

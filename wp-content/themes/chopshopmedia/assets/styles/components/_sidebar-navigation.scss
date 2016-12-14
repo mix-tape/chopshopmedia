@@ -1,0 +1,36 @@
+// --------------------------------------------------------------------------
+//
+//   Sidebar Navigation
+//
+// --------------------------------------------------------------------------
+
+.sidebarNavigation {
+  @include span-columns(2);
+
+  @include media($mobile-down) {
+    @include span-columns(4);
+  }
+}
+
+  .sidebarNavigation-menuItem {
+    display: block;
+
+    margin-bottom: 40px;
+    padding-bottom: 20px;
+
+    color: $black;
+    font-size: 18px;
+    font-weight: 800;
+    letter-spacing: 10px;
+
+    &:hover {
+      color: $black;
+    }
+
+    &:after {
+      content: '//';
+      margin-left: 0.2em;
+      font-weight: lighter;
+      letter-spacing: 3px;
+    }
+  }

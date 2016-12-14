@@ -47,6 +47,7 @@ h6 {
   color: $base-heading-color;
   font-weight: 800;
   line-height: 1.2;
+  -webkit-font-smoothing: antialiased;
 
   &:first-child {
     margin-top: 0;
@@ -55,7 +56,12 @@ h6 {
 
 h1 { font-size: 36px; }
 h2 { font-size: 32px; }
-h3 { font-size: 24px; }
+h3 {
+  margin-top: 2em;
+  font-size: 18px;
+  font-weight: 600;
+  letter-spacing: 3px;
+}
 h4 { font-size: 16px; }
 h5 { font-size: 16px; }
 h6 { font-size: 14px; text-transform: uppercase; }

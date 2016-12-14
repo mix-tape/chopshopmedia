@@ -100,7 +100,7 @@ class NavWalker extends \Walker_Nav_Menu {
     $item_output = "$args->before<a $attributes>$args->link_before $number $title</a>"
                  . "$args->link_after$args->after";
 
-    $output .= $indent . "<li class=\"menu-item\">";
+    $output .= $indent . "<li class=\"" . implode(' ', apply_filters( 'nav_menu_css_class', $item->classes, $item )) . "\">";
 
     $output .= apply_filters(
             'walker_nav_menu_start_el',

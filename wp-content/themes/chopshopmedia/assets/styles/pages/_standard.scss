@@ -3,3 +3,12 @@
 //  Standard Page Type
 //
 // --------------------------------------------------------------------------
+
+
+.pageContent {
+  @include span-columns(8);
+
+  @include media($mobile-down) {
+    @include span-columns(4);
+  }
+}

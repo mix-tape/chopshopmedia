@@ -69,5 +69,9 @@
           font-size: 6vw;
         }
       }
+
+      &.active a {
+        border-bottom: 1px solid white;
+      }
     }
 }
