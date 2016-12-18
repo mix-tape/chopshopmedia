@@ -1,0 +1,43 @@
+// --------------------------------------------------------------------------
+//
+//   Our Work
+//
+// --------------------------------------------------------------------------
+
+.portfolioTeaser {
+  display: block;
+  border-top: 1px solid $white;
+  background-color: $black;
+  padding: 150px 0;
+
+  color: $white;
+
+  &:hover {
+    border-top: 1px solid $black;
+    background-color: $white;
+    color: $black;
+  }
+}
+
+  .portfolioTeaser-content {
+    @include span-columns(10);
+    @include shift(2);
+  }
+
+    .portfolioTeaser-title {
+      margin-bottom: 0;
+
+      color: $white;
+      font-size: 36px;
+      font-weight: 900;
+      text-transform: uppercase;
+
+      .portfolioTeaser:hover & {
+        color: $black;
+      }
+    }
+
+    .portfolioTeaser-services {
+      display: block;
+      margin-top: 10px;
+    }

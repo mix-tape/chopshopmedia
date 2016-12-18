@@ -35,6 +35,14 @@
     }
   }
 
+  .shift--one {
+    margin-left: 180px;
+
+    @include media($mobile-down) {
+      margin-left: 0;
+    }
+  }
+
   .shift--two {
     @include shift(1);
   }

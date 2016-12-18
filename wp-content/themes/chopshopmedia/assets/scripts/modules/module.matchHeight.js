@@ -23,7 +23,7 @@ $(window).load(function() {
   // --------------------------------------------------------------------------
 
   setTimeout(function() {
-    // $('.example').matchHeight(options);
+    $('.valueBox').matchHeight(options);
   }, 100);
 
   $(document).trigger('redraw');

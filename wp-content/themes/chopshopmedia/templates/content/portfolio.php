@@ -68,8 +68,10 @@
                 <div class="galleryRow-block <?php if ($block['video']) echo 'galleryRow-block--video' ?>" style="background-image: url(<?php echo $block['image']['url']; ?>)" title="<?php echo $block['image']['alt']; ?>">
 
                   <?php if ($block['video']) { ?>
-                    <a href="<?php echo $block['video']['url'] ?>" class="galleryRow-block-link">Watch Video</a>
+                    <a href="#<?php //echo $block['video']['url'] ?>" data-featherlight="#lbtest" class="galleryRow-block-link">Watch Video</a>
                   <?php } ?>
+
+                  <iframe src="<?php echo $block['video']['url'] ?>" width="1280" height="720" id="lbtest" class="lightbox" style="border:none;" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
                 </div>
 

@@ -3,6 +3,25 @@
     "title": "Portfolio",
     "fields": [
         {
+            "key": "field_5853e9b913184",
+            "label": "Services",
+            "name": "services",
+            "type": "text",
+            "instructions": "Slash separated list of services in this portfolio",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            },
+            "default_value": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
+            "maxlength": ""
+        },
+        {
             "key": "field_584ff65d98cd0",
             "label": "Content",
             "name": "content",
@@ -166,5 +185,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1481636461
+    "modified": 1481894376
 }

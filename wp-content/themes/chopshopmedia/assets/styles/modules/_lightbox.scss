@@ -4,6 +4,10 @@
 //
 // --------------------------------------------------------------------------
 
+.lightbox {
+  display: none;
+}
+
 .featherlight {
   display: none;
 
@@ -20,7 +24,7 @@
 
   /* styling */
   cursor: pointer;
-  background: #333;
+  background: rgba($black, 0.8);
 
   &:before {
     /* position: trick to center content vertically */

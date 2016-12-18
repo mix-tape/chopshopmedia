@@ -1,0 +1,140 @@
+// --------------------------------------------------------------------------
+//
+//   About us
+//
+// --------------------------------------------------------------------------
+
+.aboutValues {
+  background-color: $black;
+  padding: 80px 0;
+}
+
+  .aboutValues-header {
+    text-align: right;
+    padding-right: 100px;
+
+    @include media($mobile-down) {
+      padding-right: 40px;
+    }
+  }
+
+    .aboutValues-title {
+      color: $white;
+    }
+
+  .aboutValues-values {
+    padding: 40px;
+  }
+
+
+.valueBox {
+  @include span-columns(6);
+  @include omega(2n);
+  position: relative;
+  padding: 60px;
+  margin-bottom: 2.35765%;
+
+  border: 1px solid $white;
+
+  text-align: center;
+  color: $white;
+
+  cursor: pointer;
+
+  @include media($mobile-down) {
+    @include span-columns(4);
+  }
+}
+
+  .valueBox-title {
+    color: $white;
+
+  }
+
+  .valueBox-content {
+
+  }
+
+  .valueBox-hover {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    padding: 0 100px;
+
+    opacity: 0;
+
+    background-color: $white;
+    color: $black;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-size: 30px;
+    line-height: 1.4;
+
+    .valueBox:hover & {
+      opacity: 1;
+    }
+
+    @include media($mobile-down) {
+      padding: 40px;
+    }
+
+  }
+
+
+.pageContent-profile {
+  @include clearfix;
+  display: block;
+  width: 130%;
+  margin-top: 100px;
+
+  @include media($mobile-down) {
+    width: 100%;
+  }
+}
+
+  .pageContent-profile-content {
+    @include span-columns(6);
+
+    @include media($mobile-down) {
+      @include span-columns(4);
+    }
+  }
+
+  .pageContent-profile-photo {
+    @include span-columns(5);
+
+    @include media($mobile-down) {
+      @include span-columns(4);
+    }
+  }
+
+.pageContent-profile--right {
+
+  .pageContent-profile-photo {
+    transform: translateX(100px);
+
+    @include media($mobile-down) {
+      transform: translateX(0px);
+    }
+  }
+}
+
+.pageContent-profile--left {
+  margin-left: -150px;
+
+  @include media($mobile-down) {
+    margin-left: 0;
+  }
+
+  .pageContent-profile-photo {
+
+    @include media($mobile-down) {
+      margin-bottom: 50px;
+    }
+  }
+}
