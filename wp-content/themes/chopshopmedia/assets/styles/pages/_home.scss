@@ -34,3 +34,35 @@
       line-height: 1;
     }
 
+
+// --------------------------------------------------------------------------
+//   exploreWorkCta
+// --------------------------------------------------------------------------
+
+.exploreWorkCta {
+  position: relative;
+  display: block;
+  margin: 0 auto;
+  max-width: 800px;
+  height: 400px;
+
+  background-size: cover;
+}
+
+  .exploreWorkCta-hover {
+    background-color: $black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+
+    opacity: 0;
+
+    .exploreWorkCta:hover & {
+      opacity: 1;
+    }
+  }

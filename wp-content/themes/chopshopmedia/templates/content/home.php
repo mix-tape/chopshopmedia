@@ -37,7 +37,7 @@
 
           <p>Founded by The Rules (Adam and Gemma) in 2008, CSM has gone from being a side project used for creative passion projects, to a full-time business with clients from varying market sectors including government, property, sport and entertainment.</p>
 
-          <a href="#" class="button button--left button--dark">learn more <strong>about us</strong></a>
+          <a href="/about-us" class="button button--left button--dark">learn more <strong>about us</strong></a>
 
         </div>
 
@@ -95,8 +95,8 @@
 
 
           <nav class="sectionSplit-actions">
-            <a href="#" class="button button--left button--dark">learn about <strong>our services</strong></a>
-            <a href="#" class="button button--right button--dark">explore <strong>our work</strong></a>
+            <a href="/our-services" class="button button--left button--dark">learn about <strong>our services</strong></a>
+            <a href="/our-work" class="button button--right button--dark">explore <strong>our work</strong></a>
           </nav>
 
         </div>
@@ -150,8 +150,11 @@
         <span class="sectionTitle-title">Explore <br> Our Work</span>
       </div>
 
-      <div>
-        <img alt="Chop Shop Media" src="<?php image_directory() ?>/content-home-section-03.jpg">
+      <div class="exploreWorkCta" style="background-image: url(<?php image_directory() ?>/content-home-section-03.jpg)">
+        <div class="exploreWorkCta-hover">
+          <a href="" class="button button--left button--light">view <strong>sizzle reel</strong></a>
+          <a href="/our-work" class="button button--right button--light">view <strong>gallery</strong></a>
+        </div>
       </div>
 
     </div>

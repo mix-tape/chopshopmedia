@@ -47,6 +47,7 @@ h6 {
   color: $base-heading-color;
   font-weight: 800;
   line-height: 1.15;
+  letter-spacing: 0px;
   -webkit-font-smoothing: antialiased;
 
   &:first-child {
@@ -83,13 +84,13 @@ h6 { font-size: 14px; text-transform: uppercase; }
 // --------------------------------------------------------------------------
 
 a {
-  color: $base-link-color;
+  color: $black;
   text-decoration: none;
 }
 
 a:hover,
 a:focus {
-  color: $base-link-hover;
+  color: $charcoal;
 }
 
 p {

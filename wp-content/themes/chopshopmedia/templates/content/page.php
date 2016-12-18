@@ -15,7 +15,7 @@
 
         <article <?php post_class('pageContent') ?> id="post-<?php the_ID(); ?>">
 
-
+          <?php the_content() ?>
 
         </article>
 

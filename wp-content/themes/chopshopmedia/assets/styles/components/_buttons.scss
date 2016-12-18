@@ -8,6 +8,7 @@ $button-transition: all 400ms ease-in-out;
 
 @mixin button ($colour1: $black) {
   position: relative;
+  z-index: 1;
   display: inline-block;
   padding: 0.4em 1.7em;
   color: $black;
@@ -111,6 +112,29 @@ $button-transition: all 400ms ease-in-out;
     &:before {
       background-color: $black;
       color: $white;
+
+      transition: $button-transition;
+    }
+
+    &:hover {
+      &:after,
+      &:before {
+        background-color: $white;
+      }
+    }
+  }
+
+
+  .button--light {
+    background-color: $black;
+    color: $white;
+    border-color: $white;
+
+    &:after,
+    &:before {
+      background-color: $black;
+      color: $white;
+      border-color: $white;
 
       transition: $button-transition;
     }
