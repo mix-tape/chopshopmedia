@@ -21,7 +21,12 @@ var gulp = require('gulp'),
 // --------------------------------------------------------------------------
 
 var bowerrc = JSON.parse(fs.readFileSync('.bowerrc', 'utf8'))
-var secrets = JSON.parse(fs.readFileSync('../../../secrets.json', 'utf8'))
+
+try {
+  var secrets = JSON.parse(fs.readFileSync('../../../secrets.json', 'utf8'))
+} catch (e) {
+  console.log(e)
+}
 
 var config = {
   url: secrets.development.url,

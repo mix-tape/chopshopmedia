@@ -126,7 +126,7 @@ module.exports = function (shipit) {
   });
 
   shipit.blTask('composer', function () {
-    return shipit.local('cd ' + shipit.config.workspace + ' && php /usr/local/bin/composer.phar install');
+    return shipit.local('cd ' + shipit.config.workspace + ' && composer install');
   });
 
 
