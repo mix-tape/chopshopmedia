@@ -86,6 +86,12 @@ module.exports = function (shipit) {
       deployTo: config.staging.deploy_path,
 
       db: {
+        local: {
+          host     : config.development.db_host,
+          username : config.development.db_user,
+          password : config.development.db_password,
+          database : config.development.db_name,
+        },
         remote: {
           host     : config.staging.db_host,
           username : config.staging.db_user,
