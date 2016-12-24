@@ -16,6 +16,14 @@
   @include clearfix;
   margin-top: 30px;
   margin-bottom: -100px;
+
+  @include media($desktop-down) {
+    margin-bottom: -50px;
+  }
+
+  @include media($mobile-down) {
+    margin-bottom: 0;
+  }
 }
 
   .aboutContent-imageOne-image {
@@ -32,6 +40,11 @@
     font-size: 40px;
     font-weight: 800;
     line-height: 1.2;
+
+    @include media($desktop-down) {
+      display: block;
+      margin-top: 40px;
+    }
   }
 
 
@@ -42,6 +55,10 @@
 .aboutValues {
   background-color: $black;
   padding: 80px 0;
+
+  @include media($mobile-down) {
+    padding: 40px 0;
+  }
 }
 
   .aboutValues-header {
@@ -59,6 +76,14 @@
 
   .aboutValues-values {
     padding: 40px 100px;
+
+    @include media($desktop-down) {
+      padding: 40px;
+    }
+
+    @include media($mobile-down) {
+      padding: 30px 10px;
+    }
   }
 
 
