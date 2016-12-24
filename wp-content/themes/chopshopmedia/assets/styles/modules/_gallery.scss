@@ -34,14 +34,6 @@
     .galleryRow-block {
       height: 45vw;
     }
-
-    .galleryRow-block--video .galleryRow-block-link {
-      padding: 20%;
-
-      @include media($mobile-down) {
-        padding: 12%;
-      }
-    }
   }
 
   .galleryRow--two {

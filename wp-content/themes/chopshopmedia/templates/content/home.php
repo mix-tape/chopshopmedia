@@ -110,35 +110,7 @@
   </section>
 
 
-  <section class="quoteSlider">
-
-    <div class="quoteSlider-slide">
-
-      <div class="container">
-
-        <div class="sectionSplit sectionSplit--small">
-          <img class="quoteSlider-logo" alt="West Coast Physiotherapy" src="<?php image_directory() ?>/content-logo-west-coast-physio.svg">
-        </div>
-
-        <div class="sectionSplit sectionSplit--large">
-
-          <div class="quoteSlider-services">Brand & Identity / Print Comms / Environmental</div>
-
-          <hr class="separator quoteSlider-separator">
-
-          <blockquote cite="http://westcoastphysiotherapy.com.au/" class="quoteSlider-quote">
-            Chop Shop Media provided the most professional service, with an amazing final product. Would recommend Adam and his team to everyone!
-          </blockquote>
-
-          <span class="quoteSlider-author">West Coast Physiotherapy</span>
-
-        </div>
-
-      </div>
-
-    </div>
-
-  </section>
+  <?php get_template_part('templates/modules/testimonials' ); ?>
 
 
   <section class="wrapper pageSection pageSection--centered">
