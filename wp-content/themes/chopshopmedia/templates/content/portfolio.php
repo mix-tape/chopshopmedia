@@ -71,7 +71,7 @@
                     <a href="#<?php //echo $block['video']['url'] ?>" data-featherlight="#lbtest" class="galleryRow-block-link">Watch Video</a>
                   <?php } ?>
 
-                  <iframe src="<?php echo $block['video']['url'] ?>" width="1280" height="720" id="lbtest" class="lightbox" style="border:none;" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
+                  <iframe src="<?php echo $block['video'] ?>" width="1280" height="720" id="lbtest" class="lightbox" style="border:none;" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
                 </div>
 

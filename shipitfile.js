@@ -63,7 +63,7 @@ module.exports = function (shipit) {
           'assets',
           {
             path: 'assets',
-            overwrite: false,
+            overwrite: true,
             chmod: '-R 755',
           }
         ],

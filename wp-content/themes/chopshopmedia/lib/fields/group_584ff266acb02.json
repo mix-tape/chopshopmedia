@@ -3,6 +3,11 @@
     "title": "Portfolio",
     "fields": [
         {
+            "default_value": "",
+            "maxlength": "",
+            "placeholder": "",
+            "prepend": "",
+            "append": "",
             "key": "field_5853e9b913184",
             "label": "Services",
             "name": "services",
@@ -14,14 +19,14 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            },
-            "default_value": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": "",
-            "maxlength": ""
+            }
         },
         {
+            "tabs": "all",
+            "toolbar": "full",
+            "media_upload": 1,
+            "default_value": "",
+            "delay": 0,
             "key": "field_584ff65d98cd0",
             "label": "Content",
             "name": "content",
@@ -33,55 +38,29 @@
                 "width": "",
                 "class": "",
                 "id": ""
-            },
-            "default_value": "",
-            "tabs": "all",
-            "toolbar": "full",
-            "media_upload": 1
+            }
         },
         {
-            "key": "field_584ff26ce56a9",
-            "label": "Portfolio Gallery",
-            "name": "gallery",
-            "type": "flexible_content",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "",
-                "class": "",
-                "id": ""
-            },
-            "button_label": "Add Row",
-            "min": "",
-            "max": "",
             "layouts": [
                 {
                     "key": "584ff27d07595",
                     "name": "two_blocks",
-                    "label": "Two Blocks",
+                    "label": "Two Images\/Videos",
                     "display": "table",
                     "sub_fields": [
                         {
-                            "key": "field_584ff98160201",
-                            "label": "Blocks",
-                            "name": "blocks",
-                            "type": "repeater",
-                            "instructions": "",
-                            "required": 0,
-                            "conditional_logic": 0,
-                            "wrapper": {
-                                "width": "",
-                                "class": "",
-                                "id": ""
-                            },
-                            "collapsed": "",
-                            "min": 2,
-                            "max": 2,
-                            "layout": "block",
-                            "button_label": "Max 2",
                             "sub_fields": [
                                 {
+                                    "return_format": "array",
+                                    "preview_size": "thumbnail",
+                                    "library": "all",
+                                    "min_width": "",
+                                    "min_height": "",
+                                    "min_size": "",
+                                    "max_width": "",
+                                    "max_height": "",
+                                    "max_size": "",
+                                    "mime_types": "",
                                     "key": "field_584ff99660202",
                                     "label": "Image",
                                     "name": "image",
@@ -93,38 +72,42 @@
                                         "width": "50",
                                         "class": "",
                                         "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "preview_size": "thumbnail",
-                                    "library": "all",
-                                    "min_width": "",
-                                    "min_height": "",
-                                    "min_size": "",
-                                    "max_width": "",
-                                    "max_height": "",
-                                    "max_size": "",
-                                    "mime_types": ""
+                                    }
                                 },
                                 {
+                                    "default_value": "",
+                                    "placeholder": "",
                                     "key": "field_584ff9b260203",
                                     "label": "Video",
                                     "name": "video",
-                                    "type": "file",
-                                    "instructions": ".mp4 video, h264 codec, 1280x720 recommended",
+                                    "type": "url",
+                                    "instructions": "Vimeo Link .mp4 video, h264 codec, 1280x720 recommended",
                                     "required": 0,
                                     "conditional_logic": 0,
                                     "wrapper": {
                                         "width": "50",
                                         "class": "",
                                         "id": ""
-                                    },
-                                    "return_format": "array",
-                                    "library": "all",
-                                    "min_size": "",
-                                    "max_size": "",
-                                    "mime_types": ""
+                                    }
                                 }
-                            ]
+                            ],
+                            "min": 2,
+                            "max": 2,
+                            "layout": "block",
+                            "button_label": "Max 2",
+                            "collapsed": "",
+                            "key": "field_584ff98160201",
+                            "label": "Blocks",
+                            "name": "blocks",
+                            "type": "repeater",
+                            "instructions": "",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "",
+                                "class": "",
+                                "id": ""
+                            }
                         }
                     ],
                     "min": "",
@@ -137,6 +120,17 @@
                     "display": "block",
                     "sub_fields": [
                         {
+                            "library": "all",
+                            "min": 3,
+                            "max": 3,
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "insert": "append",
                             "key": "field_584ff63e15cb1",
                             "label": "Images",
                             "name": "images",
@@ -148,24 +142,28 @@
                                 "width": "",
                                 "class": "",
                                 "id": ""
-                            },
-                            "min": 3,
-                            "max": 3,
-                            "insert": "append",
-                            "library": "all",
-                            "min_width": "",
-                            "min_height": "",
-                            "min_size": "",
-                            "max_width": "",
-                            "max_height": "",
-                            "max_size": "",
-                            "mime_types": ""
+                            }
                         }
                     ],
                     "min": "",
                     "max": ""
                 }
-            ]
+            ],
+            "min": "",
+            "max": "",
+            "button_label": "Add Row",
+            "key": "field_584ff26ce56a9",
+            "label": "Portfolio Gallery",
+            "name": "gallery",
+            "type": "flexible_content",
+            "instructions": "",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
         }
     ],
     "location": [
@@ -185,5 +183,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1481894376
+    "modified": 1482550354
 }
