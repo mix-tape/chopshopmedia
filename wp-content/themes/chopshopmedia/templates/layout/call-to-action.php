@@ -14,7 +14,7 @@
 
           <p>We are not natural salesmen but we do believe in the power of communication and we have the skills and experience to achieve results. We’d love to talk with you about how we can help you reach a greater audience. </p>
 
-          <a href="#" class="button button--left button--dark">make <strong>contact</strong></a>
+          <a href="/contact-us" class="button button--left button--dark">make <strong>contact</strong></a>
 
         </div>
 
