@@ -43,15 +43,6 @@ module.exports = function (shipit) {
       deleteOnRollback: false,
       shallowClone: true,
 
-      db: {
-        local: {
-          host     : config.development.url,
-          username : config.development.db_user,
-          password : config.development.db_password,
-          database : config.development.db_name,
-        },
-      },
-
       composer: {
         remote: false,
         installFlags: ['--no-dev']
@@ -62,7 +53,7 @@ module.exports = function (shipit) {
         dirs: [
           'assets',
           {
-            path: 'assets',
+            path: './assets',
             overwrite: true,
             chmod: '-R 755',
           }
@@ -71,7 +62,7 @@ module.exports = function (shipit) {
 
       assets: {
         paths: [
-          'assets',
+          './assets',
         ],
       },
     },
