@@ -46,7 +46,9 @@
 
   foreach ($query as $key => $post) { setup_postdata( $post ); ?>
 
-  <a href="<?php the_permalink(); ?>" class="portfolioTeaser">
+  <?php $hero_image = get_field( 'hero_image' ); ?>
+
+  <a href="<?php the_permalink(); ?>" class="portfolioTeaser" style="background-image: url(<?php echo $hero_image['url'] ?>)">
 
     <div class="container">
 

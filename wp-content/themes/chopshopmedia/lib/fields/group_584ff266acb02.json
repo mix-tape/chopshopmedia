@@ -22,6 +22,30 @@
             }
         },
         {
+            "return_format": "array",
+            "preview_size": "thumbnail",
+            "library": "all",
+            "min_width": "",
+            "min_height": "",
+            "min_size": "",
+            "max_width": "",
+            "max_height": "",
+            "max_size": "",
+            "mime_types": "",
+            "key": "field_585e2a0212a0c",
+            "label": "Hero Image",
+            "name": "hero_image",
+            "type": "image",
+            "instructions": "Appears on the Our Work page banner. Long and thin around 2000x400 works best",
+            "required": 0,
+            "conditional_logic": 0,
+            "wrapper": {
+                "width": "",
+                "class": "",
+                "id": ""
+            }
+        },
+        {
             "tabs": "all",
             "toolbar": "full",
             "media_upload": 1,
@@ -44,6 +68,56 @@
             "layouts": [
                 {
                     "key": "584ff27d07595",
+                    "name": "one_block",
+                    "label": "Single Image\/Video",
+                    "display": "table",
+                    "sub_fields": [
+                        {
+                            "return_format": "array",
+                            "preview_size": "thumbnail",
+                            "library": "all",
+                            "min_width": "",
+                            "min_height": "",
+                            "min_size": "",
+                            "max_width": "",
+                            "max_height": "",
+                            "max_size": "",
+                            "mime_types": "",
+                            "key": "field_584ff99660202",
+                            "label": "Image",
+                            "name": "image",
+                            "type": "image",
+                            "instructions": "Standalone image or cover for video",
+                            "required": 1,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        },
+                        {
+                            "default_value": "",
+                            "placeholder": "",
+                            "key": "field_584ff9b260203",
+                            "label": "Video",
+                            "name": "video",
+                            "type": "url",
+                            "instructions": "Vimeo Link .mp4 video, h264 codec, 1280x720 recommended",
+                            "required": 0,
+                            "conditional_logic": 0,
+                            "wrapper": {
+                                "width": "50",
+                                "class": "",
+                                "id": ""
+                            }
+                        }
+                    ],
+                    "min": "",
+                    "max": ""
+                },
+                {
+                    "key": "585e3b41edefc",
                     "name": "two_blocks",
                     "label": "Two Images\/Videos",
                     "display": "table",
@@ -61,7 +135,7 @@
                                     "max_height": "",
                                     "max_size": "",
                                     "mime_types": "",
-                                    "key": "field_584ff99660202",
+                                    "key": "field_585e3b41edefe",
                                     "label": "Image",
                                     "name": "image",
                                     "type": "image",
@@ -77,7 +151,7 @@
                                 {
                                     "default_value": "",
                                     "placeholder": "",
-                                    "key": "field_584ff9b260203",
+                                    "key": "field_585e3b41edeff",
                                     "label": "Video",
                                     "name": "video",
                                     "type": "url",
@@ -96,7 +170,7 @@
                             "layout": "block",
                             "button_label": "Max 2",
                             "collapsed": "",
-                            "key": "field_584ff98160201",
+                            "key": "field_585e3b41edefd",
                             "label": "Blocks",
                             "name": "blocks",
                             "type": "repeater",
@@ -183,5 +257,5 @@
     "hide_on_screen": "",
     "active": 1,
     "description": "",
-    "modified": 1482550354
+    "modified": 1482570778
 }
