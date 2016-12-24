@@ -51,7 +51,7 @@
                 <figure class="galleryRow-block <?php if ($video) echo 'galleryRow-block--video' ?>" style="background-image: url(<?php echo $image['url']; ?>)" title="<?php echo $image['alt']; ?>">
 
                   <?php if ($video) { ?>
-                    <a href="#" data-featherlight="#<?php echo $id ?>" class="galleryRow-block-link">Watch Video</a>
+                    <a href="#" data-featherlight="#<?php echo $id ?>" class="galleryRow-block-link"><span class="galleryRow-block-link-content">Watch Video</span></a>
 
                     <iframe src="<?php echo $video ?>" width="1280" height="720" id="<?php echo $id ?>" class="lightbox" style="border:none;" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
@@ -96,7 +96,7 @@
                 <div class="galleryRow-block <?php if ($block['video']) echo 'galleryRow-block--video' ?>" style="background-image: url(<?php echo $block['image']['url']; ?>)" title="<?php echo $block['image']['alt']; ?>">
 
                   <?php if ($block['video']) { ?>
-                    <a href="#<?php //echo $block['video']['url'] ?>" data-featherlight="#<?php echo $id ?>" class="galleryRow-block-link">Watch Video</a>
+                    <a href="#<?php //echo $block['video']['url'] ?>" data-featherlight="#<?php echo $id ?>" class="galleryRow-block-link"><span class="galleryRow-block-link-content">Watch Video</span></a>
 
                     <iframe src="<?php echo $block['video'] ?>" width="1280" height="720" id="<?php echo $id ?>" class="lightbox" style="border:none;" webkitallowfullscreen="" mozallowfullscreen="" allowfullscreen=""></iframe>
 
