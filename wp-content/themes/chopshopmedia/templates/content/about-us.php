@@ -132,7 +132,7 @@
 
         <h2>We are not the ‘out-of-the-box’ guys, instead we push boundaries and discover new territories.</h2>
 
-        <p>It‘s this edge is what helps set us apart from others. We apply lateral thinking to problems in order to find solutions that can achieve real cut-through when given the chance. We are serious and passionate about our work but also have a wicked (usually inappropriate) sense of humour which helps the creative thinking process.</p>
+        <p>This edge is what helps set us apart from others. We apply lateral thinking to problems in order to find solutions that can achieve real cut-through when given the chance. We are serious and passionate about our work but also have a wicked (usually inappropriate) sense of humour which helps the creative thinking process.</p>
 
       </div>
 
