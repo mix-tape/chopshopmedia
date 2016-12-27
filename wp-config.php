@@ -31,7 +31,7 @@ switch ($environment) {
 	// Obscure secrets on environments other than development
 
 	default:
-		$json_file_location = dirname(__FILE__) . '/../../shared/secrets.json';
+		$json_file_location = dirname(__FILE__) . '/../shared/secrets.json';
 		break;
 }
 
