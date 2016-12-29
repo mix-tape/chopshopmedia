@@ -55,14 +55,14 @@ module.exports = function (shipit) {
           {
             path: './assets',
             overwrite: true,
-            chmod: '-R 755',
+            chmod: '-R 777',
           }
         ],
       },
 
       assets: {
         paths: [
-          './assets',
+          // './assets',
         ],
       },
     },

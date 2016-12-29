@@ -85,13 +85,13 @@
 
           $blocks = get_sub_field( 'blocks' );
 
-          $id = generateRandomString(8);
-
           if ( $blocks ) { ?>
 
             <div class="galleryRow galleryRow--two">
 
               <?php foreach ( $blocks as $block ) { ?>
+
+                <?php $id = generateRandomString(8); ?>
 
                 <div class="galleryRow-block <?php if ($block['video']) echo 'galleryRow-block--video' ?>" style="background-image: url(<?php echo $block['image']['url']; ?>)" title="<?php echo $block['image']['alt']; ?>">
 

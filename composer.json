@@ -31,6 +31,7 @@
   },
   "require": {
     "johnpbloch/wordpress": ">=3.9",
+    "wpackagist-plugin/post-types-order": "*",
     "advanced-custom-fields/advanced-custom-fields-pro": "*"
   },
   "require-dev": {
