@@ -49,9 +49,7 @@ module.exports = function (shipit) {
       },
 
       shared: {
-
         dirs: [
-          'assets',
           {
             path: './assets',
             overwrite: true,
@@ -62,7 +60,7 @@ module.exports = function (shipit) {
 
       assets: {
         paths: [
-          // './assets',
+          './assets',
         ],
       },
     },
