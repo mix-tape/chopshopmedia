@@ -3,7 +3,7 @@
 
     <div class="container">
 
-      <p class="pageFooter-copyright">All content &copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?> <a href="/terms-and-conditions" class="pageFooter-copyright-link">Terms & Conditions</a></p>
+      <p class="pageFooter-copyright">All content &copy; <?php bloginfo('name'); ?> <?php echo date('Y'); ?></p>
 
       <nav class="shareLinks pageFooter-shareLinks">
         <a target="_blank" href="http://www.facebook.com/chopshopmedia" class="shareLinks-link icon icon-facebook"></a>
