@@ -18,7 +18,7 @@
 
           <h2>Our service capabilities allow us to bridge the gap that exists between idea and execution.</h2>
 
-          <p>A camel is a horse designed by committee. Experience tells us that the best work is done when less people are involved. We have built our service offering on a foundation of streamlined process and minimal administration layers in order to maximise the creative return for your dollar. We are transparent about the skills don’t have in-house and have strong relationships with external collaborators to ensure your work is consistently produced at a high level. We are lean and mean.</p>
+          <p>A camel is a horse designed by committee. Experience tells us that the best work is done when less people are involved. We have built our service offering on a foundation of streamlined process and minimal administration layers in order to maximise the creative return for your dollar. We are transparent about the skills we don’t have in-house and have strong relationships with external collaborators to ensure your work is consistently produced at a high level. We are lean and mean.</p>
 
           <p>There’s a time and a place for large advertising & communications agencies - we know this having worked for a few of them. There’s also a time when you need a scaled back approach and that’s where we come in. Chop Shop Media is a small studio that can offer personalised experience and assist you in various creative disciplines without the complexities and costly layers of larger agencies.</p>
 
@@ -34,7 +34,7 @@
 
           <p><strong>Photography / Branded Content / Corporate Promotion / Profiles / Event Coverage / TV Commercials / Motion Infographics / Music Videos</strong></p>
 
-          <p>We are passionate about high quality motion pictures. In a world flooded with an overabundance of cheap and nasty looking commercials, pre-roll and content, we are seeing the value of great story telling shown through aesthetically pleasing images as a means of reaching a new audience. Every brand has a unique story and an interesting angle to explore and share. We respect that and more importantly, we love to unearth it for growing audience.</p>
+          <p>We are passionate about high quality motion pictures. In a world flooded with an overabundance of cheap and nasty looking commercials, pre-roll and content, we are seeing the value of great story telling shown through aesthetically pleasing images as a means of reaching a new audience. Every brand has a unique story and an interesting angle to explore and share. We respect that and more importantly, we love to unearth it.</p>
 
           <p>The value of having videos on your website is huge and part and parcel of modern SEO development. Well written and produced video content is the best way to deliver your message with minimal room for miscommunication. It can build trust and integrity in a brand and showcase the many layers of personality and value your brand has. Likewise, poorly produced content can do a great deal of damage to both your online ranking and brand equity.</p>
 
@@ -81,7 +81,7 @@
 
     <div class="container">
 
-      <a href="" class="button button--right button--dark">explore <strong>our work</strong></a>
+      <a href="/our-work" class="button button--right button--dark">explore <strong>our work</strong></a>
 
       <div class="imageGrid">
 
