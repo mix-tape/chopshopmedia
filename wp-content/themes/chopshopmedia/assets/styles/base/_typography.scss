@@ -10,6 +10,8 @@ body {
   font-size: 15px;
   font-weight: 500;
   font-size-adjust: auto;
+  font-variant-ligatures: none;
+  font-feature-settings: "liga" 0;
   line-height: 1.9;
   letter-spacing: 1px;
 
@@ -20,6 +22,7 @@ body {
 
   text-rendering: optimizeLegibility;
   -webkit-font-smoothing: subpixel-antialiased;
+
 
   @include media($mobile-down) {
     font-size: 14px;
