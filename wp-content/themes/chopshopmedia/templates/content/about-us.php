@@ -164,7 +164,7 @@
           </div>
 
           <figure class="pageContent-profile-photo">
-            <img src="http://placehold.it/350x350" alt="">
+            <img width="350" src="<?php image_directory() ?>/content-services-ads2.jpg" alt="">
           </figure>
 
         </div>
@@ -172,7 +172,7 @@
         <div class="pageContent-profile pageContent-profile--left">
 
           <figure class="pageContent-profile-photo">
-            <img src="http://placehold.it/350x350" alt="">
+            <img width="350" src="<?php image_directory() ?>/content-services-gem1.jpg" alt="">
           </figure>
 
           <div class="pageContent-profile-content">
