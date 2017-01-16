@@ -179,8 +179,7 @@
 
             <h2>Gemma Rule</h2>
 
-            <p>With a backgound in photography and video production, Gemma has a keen eye and creative imagination ready to bring your ideas to life all while understanding the importance of a well-kept timeline. <br>
-            Being super organised and providing clients with regular updates and communication, Gemma keeps projects tightly run and excellently produced.</p>
+            <p>With a backgound in photography and video production, Gemma has a keen eye and creative imagination ready to bring your ideas to life all while understanding the importance of a well-kept timeline. Being super organised and providing clients with regular updates and communication, Gemma keeps projects tightly run and excellently produced.</p>
 
             <p>Gemma’s provided photographic and video work for a variety of clients ranging from fashion, music and radio through to corporate clients such as financial advisors and local government.</p>
           </div>
