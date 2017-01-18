@@ -14,7 +14,7 @@
  * You can enable/disable this feature in functions.php (or lib/config.php if you're using Sage):
  * add_theme_support('soil-nav-walker');
  */
-class NavWalker extends \Walker_Nav_Menu {
+class NavWalker extends Walker_Nav_Menu {
   private $cpt; // Boolean, is current post a custom post type
   private $archive; // Stores the archive page for current URL
 
@@ -72,10 +72,12 @@ class NavWalker extends \Walker_Nav_Menu {
 
     $classes = array_unique($classes);
 
-    return array_filter($classes, function ($element) {
+    function trim_the_items($element) {
       $element = trim($element);
       return !empty($element);
-    });
+    }
+
+    return array_filter($classes, 'trim_the_items');
   }
 
 
@@ -118,8 +120,8 @@ class NavWalker extends \Walker_Nav_Menu {
  * Remove the container
  * Remove the id="" on nav menu items
  */
-function nav_menu_args($args = '') {
-  $nav_menu_args = [];
+function csm_nav_menu_args($args = '') {
+  $nav_menu_args = array();
   $nav_menu_args['container'] = false;
 
   if (!$args['items_wrap']) {
@@ -132,5 +134,5 @@ function nav_menu_args($args = '') {
 
   return array_merge($args, $nav_menu_args);
 }
-add_filter('wp_nav_menu_args', __NAMESPACE__ . '\\nav_menu_args');
+add_filter('wp_nav_menu_args', 'csm_nav_menu_args');
 add_filter('nav_menu_item_id', '__return_null');
