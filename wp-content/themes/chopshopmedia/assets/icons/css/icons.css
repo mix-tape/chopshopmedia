@@ -74,9 +74,14 @@
   content: "\EA07";
 }
 
-@mixin icon-youtube {
+@mixin icon-vimeo {
   @include icon;
   content: "\EA08";
+}
+
+@mixin icon-youtube {
+  @include icon;
+  content: "\EA09";
 }
 
 
@@ -87,4 +92,5 @@
 .icon-linkedin:before { content: "\EA05" }
 .icon-play:before { content: "\EA06" }
 .icon-separator:before { content: "\EA07" }
-.icon-youtube:before { content: "\EA08" }
+.icon-vimeo:before { content: "\EA08" }
+.icon-youtube:before { content: "\EA09" }
