@@ -72,11 +72,6 @@ class NavWalker extends Walker_Nav_Menu {
 
     $classes = array_unique($classes);
 
-    function trim_the_items($element) {
-      $element = trim($element);
-      return !empty($element);
-    }
-
     return array_filter($classes, 'trim_the_items');
   }
 
@@ -136,3 +131,8 @@ function csm_nav_menu_args($args = '') {
 }
 add_filter('wp_nav_menu_args', 'csm_nav_menu_args');
 add_filter('nav_menu_item_id', '__return_null');
+
+function trim_the_items($element) {
+  $element = trim($element);
+  return !empty($element);
+}
