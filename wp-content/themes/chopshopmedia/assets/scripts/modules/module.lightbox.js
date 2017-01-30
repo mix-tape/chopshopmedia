@@ -4,4 +4,8 @@
 //
 // --------------------------------------------------------------------------
 
-$('.galleryRow-block-link').featherlight();
+$('.galleryRow-block-link').featherlight({
+  afterContent: function () {
+    $('.featherlight-content').fitVids();
+  }
+});
