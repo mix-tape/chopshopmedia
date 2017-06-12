@@ -8,6 +8,13 @@
   max-width: 600px;
   margin-top: 60px;
   margin-bottom: -100px;
-  float: right
+  float: right;
+
+  @include media($mobile-down) {
+    max-width: 100%;
+    margin-top: 0;
+    margin-bottom: 0;
+    float: none;
+  }
 }
 

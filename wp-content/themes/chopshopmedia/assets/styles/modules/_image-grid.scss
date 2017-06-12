@@ -5,7 +5,11 @@
 // --------------------------------------------------------------------------
 
 .imageGrid {
-  margin-top: 100px
+  margin-top: 100px;
+
+  @include media($mobile-down) {
+    margin-top: 30px;
+  }
 }
 
   .imageGrid-row {
@@ -19,6 +23,10 @@
     background-size: cover;
     background-position: center right;
     background-repeat: no-repeat;
+
+    @include media($mobile-down) {
+      min-height: calc(40vw - 10px);
+    }
   }
 
   .imageGrid-row--left .imageGrid-image {
@@ -26,7 +34,11 @@
     &:nth-child(1) {
       float: left;
       width: 40%;
-      height: 720px
+      height: 720px;
+
+      @include media($mobile-down) {
+        height: 80vw;
+      }
     }
 
     &:nth-child(2) {
@@ -45,7 +57,11 @@
     &:nth-child(1) {
       float: right;
       width: 40%;
-      height: 720px
+      height: 720px;
+
+      @include media($mobile-down) {
+        height: 80vw;
+      }
     }
 
     &:nth-child(2) {

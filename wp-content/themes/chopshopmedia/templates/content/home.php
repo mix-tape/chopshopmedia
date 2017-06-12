@@ -124,7 +124,7 @@
 
       <div class="exploreWorkCta" style="background-image: url(<?php image_directory() ?>/content-home-section-03.jpg)">
         <div class="exploreWorkCta-hover">
-          <a href="" class="button button--left button--light">view <strong>sizzle reel</strong></a>
+          <a href="/our-work/sizzle-reel" class="button button--left button--light">view <strong>sizzle reel</strong></a>
           <a href="/our-work" class="button button--right button--light">view <strong>gallery</strong></a>
         </div>
       </div>

@@ -31,7 +31,7 @@
 
             Office 2, 45 Market Street <br>
             Fremantle, Western Australia <br>
-            E: <a href="mailto:hello@chopshopmedia.com.au">hello@chopshopmedia.com.au</a>
+            E: <a href="mailto:info@chopshopmedia.com.au">info@chopshopmedia.com.au</a>
 
           </div>
 

@@ -21,11 +21,19 @@
     background: $white;
     color: $black;
   }
+
+  @include media($mobile-down) {
+    padding: 40px 0;
+  }
 }
 
   .portfolioTeaser-content {
     @include span-columns(10);
     @include shift(2);
+
+    @include media($mobile-down) {
+      @include shift(1);
+    }
   }
 
     .portfolioTeaser-title {
@@ -35,6 +43,10 @@
       font-size: 36px;
       font-weight: 900;
       text-transform: uppercase;
+
+      @include media($mobile-down) {
+        font-size: 24px;
+      }
 
       .portfolioTeaser:hover & {
         color: $black;

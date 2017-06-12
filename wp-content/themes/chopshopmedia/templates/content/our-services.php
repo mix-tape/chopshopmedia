@@ -61,8 +61,8 @@
       </header>
 
       <br>
-      <br>
-      <br>
+      <br class="breakSpacer">
+      <br class="breakSpacer">
 
       <p>
         <strong>Brand & Identity / Campaign / Print Comms / Environmental / UX & UI Design / Motion Design</strong>
